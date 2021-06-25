@@ -53,13 +53,13 @@ function draw() {
 
 }
 
-//function to read Stock
+
 function readStock(data){
   foodS = data.val();
   foodObj.updateFoodStock(foodS);
 }
 
-//function to update food stock and last fed time
+
   function feedDog() {
     mainDog.addImage(happyDog);
     foodObj.updateFoodStock(foodObj.getFoodStock()-1);
@@ -70,7 +70,7 @@ function readStock(data){
   }
 
 
-//function to add food in stock
+
 function addFoods(){
   if(foodS<20){
   foodS++;
